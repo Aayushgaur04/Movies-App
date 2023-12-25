@@ -59,6 +59,7 @@ public class Movie extends BaseObservable {
 
     public void setOverview(String overview) {
         this.overview = overview;
+        notifyPropertyChanged(BR.title);
     }
 
     public String getPosterPath() {
